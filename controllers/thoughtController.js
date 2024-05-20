@@ -114,11 +114,11 @@ module.exports = {
         { runValidators: true, new: true }
       )
 
-      if (!reactions) {
-        return res.status(404).json({ message: 'No reactions with this id!' });
+      if (!thought) {
+        return res.status(404).json({ message: 'No thought with this id!' });
       }
 
-      res.json(reaction);
+      res.json(thought);
     } catch (err) {
       res.status(500).json(err);
     }
